@@ -12,17 +12,17 @@ const projects = [
     techs: ["React", "Vite", "JavaScript", "Tailwind CSS"],
     image: loja,
     demo: "https://landing-materials.vercel.app",
-    github: "https://github.com/seuusuario/projeto",
+    github: "https://github.com/EldenXLe/LandingMaterials",
   },
   {
     id: 2,
     title: "Pokédex",
     description:
       "Aplicação que consome a PokéAPI para listar e exibir informações de Pokémon, demonstrando integração com API e manipulação dinâmica de dados.",
-    techs: ["React", "JavaScript", "Tailwind CSS", "API REST"],
+    techs: ["JavaScript", "CSS", "API REST"],
     image: pokedex,
     demo: "https://pokedex-rho-khaki-63.vercel.app",
-    github: "https://github.com/seuusuario/projeto",
+    github: "https://github.com/EldenXLe/Pokedex",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects = [
     techs: ["JavaScript", "HTML", "CSS", "API REST"],
     image: clima,
     demo: "https://consulta-clima-ten.vercel.app",
-    github: "https://github.com/seuusuario/projeto",
+    github: "https://github.com/EldenXLe/Consulta-Clima",
   },
   {
     id: 4,
