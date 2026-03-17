@@ -26,16 +26,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "Consulta de Clima",
-    description:
-      "Aplicação que utiliza geolocalização e consumo de API para exibir informações climáticas da cidade selecionada de forma clara e responsiva.",
-    techs: ["JavaScript", "HTML", "CSS", "API REST"],
-    image: clima,
-    demo: "https://consulta-clima-ten.vercel.app",
-    github: "https://github.com/EldenXLe/Consulta-Clima",
-  },
-  {
-    id: 4,
     title: "Landing Page - Restaurante",
     description:
       "Landing page desenvolvida para um restaurante, com destaque para cardápio, localização e informações de contato em uma interface moderna e fluida.",
