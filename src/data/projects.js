@@ -2,7 +2,7 @@ import loja from "../assets/images/projects/lojaMateriais.png";
 import pokedex from "../assets/images/projects/pokedex.png";
 import clima from "../assets/images/projects/ConsultaClima.png";
 import restaurante from "../assets/images/projects/Restaurante.png";
-import financeFlow from "../assets/images/projects/FinanceFlow.png";
+import financeFlow from "../assets/images/projects/financeflow.png";
 
 const projects = [
   {
