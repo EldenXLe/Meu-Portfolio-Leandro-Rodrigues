@@ -1,16 +1,43 @@
-# React + Vite
+# Portfólio — Leandro Rodrigues
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meu portfólio de desenvolvedor front-end: apresentação, tecnologias, projetos com links de demo e código, experiência profissional e contato.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Site:** [meu-portfolio-leandro-rodrigues.vercel.app](https://meu-portfolio-leandro-rodrigues.vercel.app)
 
-## React Compiler
+![Página inicial do portfólio](docs/desktop.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Destaques técnicos
 
-## Expanding the ESLint configuration
+- **Componentes por responsabilidade:** `layout/` (Header, Footer), `sections/` (Hero, About, Tech, Projects, Experience, Contact) e `ui/` (Button, ProjectCard, TechBadge, SectionTitle).
+- **Conteúdo separado da interface:** projetos, tecnologias e experiências ficam em `src/data/`. Para adicionar um projeto, basta incluir um objeto em `projects.js`.
+- Animações de rolagem com AOS.
+- Estilização em CSS puro, com layout responsivo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura
+
+```
+src/
+├── components/
+│   ├── layout/
+│   ├── sections/
+│   └── ui/
+├── data/        # projects.js, techs.js, experiences.js
+└── styles/
+```
+
+## Como executar
+
+```bash
+git clone https://github.com/EldenXLe/Meu-Portfolio-Leandro-Rodrigues.git
+cd Meu-Portfolio-Leandro-Rodrigues
+npm install
+npm run dev
+```
+
+## Contato
+
+[LinkedIn](https://www.linkedin.com/in/leandrorodrigues-dev/) · [GitHub](https://github.com/EldenXLe)
