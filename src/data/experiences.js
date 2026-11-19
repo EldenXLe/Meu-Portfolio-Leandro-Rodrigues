@@ -1,7 +1,7 @@
 const experiences = [
   {
     id: 1,
-    role: "Analista de Sistemas",
+    role: "Analista de Suporte Técnico | Sistemas ERP",
     company: "Oficina Inteligente",
   description:
       `> Análise e resolução de problemas relacionados ao funcionamento do sistema utilizado por oficinas mecânicas.
@@ -11,7 +11,7 @@ const experiences = [
   `},
   {
     id: 2,
-    role: "Suporte Técnico N1 / N2",
+    role: "Analista de Suporte de TI",
     company: "Concentrix",
     description:
       `> Diagnóstico e resolução de problemas técnicos em computadores, dispositivos móveis e serviços digitais.

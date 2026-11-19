@@ -22,7 +22,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/leandro-rodrigues-3852781b8/"
+            href="https://www.linkedin.com/in/leandrorodrigues-dev/"
             target="_blank"
             rel="noreferrer"
           >

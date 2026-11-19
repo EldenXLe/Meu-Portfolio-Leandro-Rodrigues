@@ -44,7 +44,7 @@ const projects = [
     techs: ["React", "Vite", "JavaScript", "Tailwind CSS"],
     image: restaurante,
     demo: "https://modelo-restaurantes.vercel.app",
-    github: "https://github.com/seuusuario/projeto",
+    github: "https://github.com/EldenXLe/LandingRestaurant",
   },
 ];
 

@@ -18,7 +18,7 @@ function About() {
 
           <p>
             Sou desenvolvedor front-end com formação em Análise e
-            Desenvolvimento de Sistemas e atualmente cursando Gestão da
+            Desenvolvimento de Sistemas e em Gestão da
             Tecnologia da Informação.
           </p>
 

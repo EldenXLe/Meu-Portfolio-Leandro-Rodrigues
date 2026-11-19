@@ -45,7 +45,7 @@ function Hero() {
           </div>
 
           <div className="hero-mini-card">
-            <p>Formação atual</p>
+            <p>Formação concluída</p>
             <strong>Gestão da Tecnologia da Informação</strong>
           </div>
         </div>
