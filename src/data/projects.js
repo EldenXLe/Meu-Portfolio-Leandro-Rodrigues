@@ -1,7 +1,7 @@
 import financeFlow from "../assets/images/projects/financeflow.png";
+import caderneta from "../assets/images/projects/caderneta.png";
 import loja from "../assets/images/projects/lojaMateriais.png";
 import restaurante from "../assets/images/projects/Restaurante.png";
-import clima from "../assets/images/projects/ConsultaClima.png";
 import pokedex from "../assets/images/projects/pokedex.png";
 
 const projects = [
@@ -15,6 +15,17 @@ const projects = [
     image: financeFlow,
     demo: "https://gerenciamento-financeiro-six.vercel.app/",
     github: "https://github.com/EldenXLe/Gerenciamento-Financeiro",
+  },
+  {
+    id: "caderneta",
+    title: "Caderneta",
+    kind: "PWA offline",
+    description:
+      "Controle de gastos que funciona sem internet e se instala como app: orçamento por categoria, assinaturas recorrentes, importação de OFX, backup e CSV.",
+    techs: ["React", "Vite", "PWA", "Vitest", "Playwright"],
+    image: caderneta,
+    demo: "https://caderneta-gastos.vercel.app",
+    github: "https://github.com/EldenXLe/caderneta-gastos",
   },
   {
     id: "materiais",
@@ -37,17 +48,6 @@ const projects = [
     image: restaurante,
     demo: "https://modelo-restaurantes.vercel.app",
     github: "https://github.com/EldenXLe/LandingRestaurant",
-  },
-  {
-    id: "clima",
-    title: "Consulta Clima",
-    kind: "API OpenWeather",
-    description:
-      "Clima da localização atual e busca por cidade, consumindo a API de previsão do tempo da OpenWeather.",
-    techs: ["React", "Tailwind CSS", "API REST"],
-    image: clima,
-    demo: "https://consulta-clima-ten.vercel.app",
-    github: "https://github.com/EldenXLe/Consulta-Clima",
   },
   {
     id: "pokedex",
