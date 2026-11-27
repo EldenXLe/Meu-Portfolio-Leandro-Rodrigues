@@ -1,34 +1,25 @@
-import techs from "../../data/techs";
-import SectionTitle from "../ui/SectionTitle";
+import techs, { stackDiagram } from "../../data/techs";
 
 function Tech() {
   return (
-    <section id="tecnologias">
-      <div className="container">
-
-        <div data-aos="fade-up">
-          <SectionTitle
-            label="Tecnologias"
-            title="Ferramentas que fazem parte da minha jornada"
-            description="Tecnologias que utilizo para criar interfaces modernas, interativas e bem estruturadas."
-          />
+    <section className="section" id="tecnologias" aria-labelledby="tecnologias-h">
+      <div className="wrap">
+        <div className="grid">
+          <div className="span-5 tech__text">
+            <h2 id="tecnologias-h">A stack de front‑end em cada projeto</h2>
+            <ul className="rows tech__rows">
+              {techs.map((tech) => (
+                <li key={tech.name}>
+                  <span className="rows__name">{tech.name}</span>
+                  <p>{tech.line}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="frame frame--split span-6 start-7 tech__frame">
+            <div className="dg" data-diagram={JSON.stringify(stackDiagram)}></div>
+          </div>
         </div>
-
-        <div className="tech-grid">
-          {techs.map((tech, index) => (
-            <div
-              className="tech-card"
-              key={tech.name}
-              data-aos="zoom-in-up"
-              data-aos-delay={index * 100}
-            >
-              <h3>{tech.name}</h3>
-
-              <p>{tech.description}</p>
-            </div>
-          ))}
-        </div>
-
       </div>
     </section>
   );

@@ -1,0 +1,102 @@
+/* page CSS: only what sits inside a visual and the kit lacks. Tokens, grid, type, buttons, nav and
+   footer come from public/kit/system.css. */
+
+/* React's mount node lays out as if it were not there: header, main and footer are the body's rows */
+#root { display: contents; }
+
+/* ---- hero: the lead and the statement's line are read, so they take the ink */
+.hero--centred .hero__lead, #metodo .mo-la__sub { color: var(--ink); }
+.hero__window .loop-pause:focus-visible { outline-color: #18191b; }
+
+/* ---- hero: the code window on the lit ground, dark UI */
+.hero-code { --fx-bg: #1d1f22; --fx-surface: #26292d; --fx-ink: #eceef0; --fx-muted: #9aa0a6; --fx-accent: #ff4a1f;
+  --ui-mono: var(--font-mono); width: 100%; box-shadow: 0 30px 70px -30px rgb(0 0 0 / .6); }
+@media (max-width: 639px) {
+  .hero-code .ui-code__tab + .ui-code__tab, .hero-code .ui-code__chip { display: none; }
+  .hero-code .ui-code__ln { white-space: pre-wrap; padding-right: 12px; }
+}
+.hero-code .k { color: #ff8a66; } .hero-code .f { color: #8fc3ff; } .hero-code .n { color: #b8d98a; }
+
+/* ---- projects: one app window, the list beside the open project (sections-library app-frame) */
+.projects__intro { color: var(--ink); font-size: var(--t-lead); line-height: 1.5; }
+.projects__intro .link { margin-top: var(--s-3); }
+.app.ui { --fx-bg: #1d1f22; --fx-ink: #eceef0; --fx-muted: #9aa0a6; --fx-accent: #ff4a1f;
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); margin-top: var(--s-7);
+  background: var(--u-bg); color: var(--u-ink); border: 1px solid var(--u-border); border-radius: var(--u-r);
+  box-shadow: 0 30px 70px -30px rgb(0 0 0 / .7); overflow: hidden; min-height: 500px; }
+.app > .app__pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+.app > .app__pane + .app__pane { border-left: 1px solid var(--u-line); }
+.app__bar { display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 16px; flex: none;
+  border-bottom: 1px solid var(--u-line); font-size: 14px; color: var(--u-muted); }
+.app__dots { display: flex; gap: 6px; } .app__dots i { width: 10px; height: 10px; border-radius: 50%; background: #3a3e43; }
+.app__count { margin-left: auto; font-variant-numeric: tabular-nums; }
+.app__url { margin-inline: auto; padding: 4px 14px; border-radius: 99px; background: var(--u-fill-2); font: 13px/1.4 var(--font-mono); }
+.app__rows { list-style: none; margin: 0; padding: 8px; display: grid; gap: 2px; }
+.app__row { width: 100%; min-height: 64px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-content: center;
+  padding: 10px 12px; border: 0; border-radius: 10px; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer;
+  transition: background-color 200ms var(--m-ease, ease); }
+.app__row:hover { background: var(--u-fill-2); }
+.app__row[aria-pressed="true"] { background: var(--u-fill-3); box-shadow: inset 2px 0 0 var(--p-accent); }
+.app__name { font-weight: 500; font-size: 16px; }
+.app__kind { grid-column: 1; font-size: 14px; color: var(--u-muted); }
+.app__chip { grid-column: 2; grid-row: 1 / span 2; align-self: center; padding: 3px 10px; border-radius: 99px;
+  font-size: 13px; color: var(--u-muted); box-shadow: inset 0 0 0 1px var(--u-line-2); }
+.app__body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); }
+.app__shot { position: relative; overflow: hidden; background: #0f1012; }
+.app__shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  animation: shot-in 450ms cubic-bezier(.22, 1, .36, 1); }
+@keyframes shot-in { from { opacity: 0; transform: scale(1.02); } }
+.app__info { padding: var(--s-5); display: flex; flex-direction: column; gap: var(--s-4); border-left: 1px solid var(--u-line); }
+.app__title { font: var(--display-weight) var(--t-card)/1.25 var(--font-display); }
+.app__info p { font-size: 16px; line-height: 1.6; color: var(--u-ink); }
+.app__techs { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.app__techs li { padding: 3px 10px; border-radius: 99px; font-size: 13px; color: var(--u-muted); box-shadow: inset 0 0 0 1px var(--u-line-2); }
+.app__links { margin-top: auto; display: grid; gap: var(--s-2); }
+.app__links .link { color: var(--u-ink); }
+@media (max-width: 1279px) { .app__body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(220px, 1fr) auto; }
+  .app__info { border-left: 0; border-top: 1px solid var(--u-line); } .app__links { grid-auto-flow: column; justify-content: start; gap: var(--s-5); } }
+@media (max-width: 1023px) {
+  .group > .app.ui { grid-template-columns: minmax(0, 1fr); min-height: 0; flex: none; }
+  .app__body { grid-template-rows: 260px auto; }
+  .app > .app__pane + .app__pane { border-left: 0; border-top: 1px solid var(--u-line); }
+  .app__pane--list .app__bar { display: none; }
+  .app__rows { display: flex; flex-wrap: wrap; gap: 6px; }
+  .app__row { grid-template-columns: auto; min-height: 44px; padding: 8px 14px; border-radius: 99px; box-shadow: inset 0 0 0 1px var(--u-line-2); }
+  .app__row[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--p-accent); }
+  .app__kind, .app__chip { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .app__shot img { animation: none; } }
+
+/* ---- close: the full name is long, so it is hand-set to fit the .wrap (about 8.1 em wide) */
+.close__word { font-size: clamp(36px, 10.6vw, 156px); line-height: 1; white-space: nowrap; }
+
+/* ---- techs: the list beside the stack diagram */
+.tech__text { display: grid; align-content: start; gap: var(--s-6); }
+.tech__rows { list-style: none; margin: 0; padding: 0; }
+.tech__rows > li { padding-block: var(--s-3); }
+.tech__rows > li > p { color: var(--muted); }
+.tech__frame { min-height: 560px; display: grid; place-items: center; }
+.tech__frame .dg { width: 100%; }
+@media (max-width: 1023px) { .tech__frame { min-height: 380px; margin-top: var(--s-7); } }
+
+/* ---- about and experience */
+.about__text { display: grid; align-content: start; gap: var(--s-5); }
+.about__facts { display: grid; gap: var(--s-4); margin: var(--s-3) 0 0; }
+.about__facts div { display: grid; gap: var(--s-1); padding-bottom: var(--s-4); border-bottom: 1px solid var(--line); }
+.about__facts dt { font-size: 13px; font-weight: 500; color: var(--muted); }
+.about__facts dd { margin: 0; font-size: 18px; }
+.about__side { display: grid; align-content: start; gap: var(--s-5); }
+.about__photo { aspect-ratio: 5 / 4; }
+.about__photo img { object-fit: cover; }
+.experience { margin-top: var(--s-4); display: grid; gap: var(--s-4); }
+.experience .rows { list-style: none; margin: 0; padding: 0; }
+
+/* ---- phone: the full name is 17 characters, so the bar shortens it to the first name (system.css, nav);
+   under 360 the hero and the closing carry the main action and the bar keeps the name and the menu */
+@media (max-width: 639px) { .nav .nav__logo-rest { display: none; } }
+@media (max-width: 359px) { header.nav > .nav__bar > .nav__actions { display: none !important; } }
+@media (max-width: 639px) {
+  .app__pane--open .app__bar { display: none; }
+  .experience .rows > li { grid-template-columns: minmax(0, 1fr); }
+  .experience .rows__value { grid-column: 1; grid-row: 2; text-align: left; }
+}
