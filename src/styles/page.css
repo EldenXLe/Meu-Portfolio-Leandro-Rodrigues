@@ -85,10 +85,15 @@
 .about__facts div { display: grid; gap: var(--s-1); padding-bottom: var(--s-4); border-bottom: 1px solid var(--line); }
 .about__facts dt { font-size: 13px; font-weight: 500; color: var(--muted); }
 .about__facts dd { margin: 0; font-size: 18px; }
-.about__side { display: grid; align-content: start; gap: var(--s-5); }
-.about__photo { aspect-ratio: 5 / 4; }
+.about__photo { aspect-ratio: 1; max-height: 640px; }
 .about__photo img { object-fit: cover; }
-.experience { margin-top: var(--s-4); display: grid; gap: var(--s-4); }
+.experience { display: grid; align-content: start; gap: var(--s-5); }
+.experience .rows > li { padding-block: var(--s-4); }
+.courses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5); margin: 0; }
+.courses dt { font-size: 13px; font-weight: 500; color: var(--muted); }
+.courses dd { margin: var(--s-1) 0 0; line-height: 1.6; }
+.tech__next { color: var(--ink); }
+@media (max-width: 639px) { .courses { grid-template-columns: minmax(0, 1fr); } }
 .experience .rows { list-style: none; margin: 0; padding: 0; }
 
 /* ---- phone: the full name is 17 characters, so the bar shortens it to the first name (system.css, nav);
@@ -98,5 +103,5 @@
 @media (max-width: 639px) {
   .app__pane--open .app__bar { display: none; }
   .experience .rows > li { grid-template-columns: minmax(0, 1fr); }
-  .experience .rows__value { grid-column: 1; grid-row: 2; text-align: left; }
+  .experience .rows__value { grid-column: 1 / -1; grid-row: 2; text-align: left; white-space: nowrap; }
 }

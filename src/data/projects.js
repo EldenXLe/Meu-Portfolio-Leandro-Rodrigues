@@ -10,8 +10,8 @@ const projects = [
     title: "FinanceFlow",
     kind: "Controle financeiro",
     description:
-      "Controle de despesas e receitas com dashboard, gráficos por categoria e importação de extratos OFX.",
-    techs: ["React", "Vite", "Tailwind CSS", "React Router", "Context API", "Recharts"],
+      "Dashboard com gráficos mensais, transações com filtros, importação de extratos OFX com categorização automática, exportação para CSV e rotas protegidas.",
+    techs: ["React", "Vite", "Tailwind CSS", "React Router", "Context API", "Recharts", "Axios"],
     image: financeFlow,
     demo: "https://gerenciamento-financeiro-six.vercel.app/",
     github: "https://github.com/EldenXLe/Gerenciamento-Financeiro",
@@ -43,8 +43,8 @@ const projects = [
     title: "Consulta Clima",
     kind: "API OpenWeather",
     description:
-      "Clima da localização atual e busca por cidade, consumindo a API da OpenWeather.",
-    techs: ["React", "JavaScript", "API REST"],
+      "Clima da localização atual e busca por cidade, consumindo a API de previsão do tempo da OpenWeather.",
+    techs: ["React", "Tailwind CSS", "API REST"],
     image: clima,
     demo: "https://consulta-clima-ten.vercel.app",
     github: "https://github.com/EldenXLe/Consulta-Clima",

@@ -1,4 +1,4 @@
-import techs, { stackDiagram } from "../../data/techs";
+import techs, { stackDiagram, studying } from "../../data/techs";
 
 function Tech() {
   return (
@@ -15,6 +15,7 @@ function Tech() {
                 </li>
               ))}
             </ul>
+            <p className="tech__next"><span className="muted">Estudando agora:</span> {studying}.</p>
           </div>
           <div className="frame frame--split span-6 start-7 tech__frame">
             <div className="dg" data-diagram={JSON.stringify(stackDiagram)}></div>

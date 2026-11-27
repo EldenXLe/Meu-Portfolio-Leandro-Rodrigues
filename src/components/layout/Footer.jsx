@@ -9,7 +9,7 @@ function Footer() {
           <div className="section-head--split">
             <div>
               <h2 id="close-h">Vamos conversar sobre a sua vaga</h2>
-              <p className="t-lead">Aberto a vagas de front-end, projetos freelance e conexões.</p>
+              <p className="t-lead">Busco vaga júnior em front-end, análise de sistemas, implantação ou QA. Moro em Socorro (SP).</p>
             </div>
             <a className="btn btn--primary" href={WHATSAPP} target="_blank" rel="noreferrer">
               {MAIN_ACTION}

@@ -7,14 +7,15 @@ function Hero() {
       <div className="wrap">
         <div className="hero-text">
           <div className="hero__c">
-            <a className="pill" href="#projetos">
-              <span>5 projetos publicados</span>
-              <span className="muted">Ver os projetos</span>
+            <a className="pill" href="#sobre">
+              <span>Aberto a vagas júnior</span>
+              <span className="muted">Remoto, híbrido ou região de Campinas</span>
             </a>
             <h1 id="hero-h">Leandro Rodrigues, front‑end em React</h1>
             <p className="hero__lead">
-              Crio sites e aplicações web responsivas com React, JavaScript e Tailwind CSS, do
-              layout ao deploy. Formado em Análise e Desenvolvimento de Sistemas.
+              Crio aplicações web responsivas com React, JavaScript e Tailwind CSS, com cinco
+              projetos publicados. Tecnólogo em Análise e Desenvolvimento de Sistemas, com quase três
+              anos de experiência em sistemas ERP.
             </p>
             <div className="btn-row">
               <a className="btn btn--primary" href={WHATSAPP} target="_blank" rel="noreferrer">
