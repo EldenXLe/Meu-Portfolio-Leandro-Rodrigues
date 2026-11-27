@@ -1,12 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR" data-type="software" data-radius="soft" data-ground="sky" data-buttons="arrow" data-motion>
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/port.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Leandro Rodrigues</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="page-type" content="software" />
+    <meta name="site-kind" content="software" />
+    <title>Leandro Rodrigues: desenvolvedor front-end em React</title>
+    <meta name="description" content="Portfólio de Leandro Rodrigues com cinco projetos em React e JavaScript publicados na Vercel, do controle financeiro à Pokédex." />
+    <meta property="og:title" content="Leandro Rodrigues, front-end em React" />
+    <meta property="og:description" content="Cinco projetos publicados, com tela, tecnologias e código de cada um." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/share.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#18191b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <link rel="canonical" href="https://meu-portfolio-leandro-rodrigues.vercel.app/"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/kit/system.css" />
+    <link rel="stylesheet" href="/kit/ui/cards.css" />
+    <link rel="stylesheet" href="/kit/motion/motion.css" />
+    <link rel="stylesheet" href="/kit/backgrounds/backgrounds.css" />
+    <link rel="stylesheet" href="/kit/layout/layout.css" />
+    <link rel="stylesheet" href="/kit/icons/icon.css" />
+    <link rel="stylesheet" href="/kit/ui/base.css" />
+    <link rel="stylesheet" href="/kit/ui/code/fragment.css" />
+    <link rel="stylesheet" href="/kit/diagrams/diagram.css" />
+    <!-- deal: palette graphite-safety-orange, type instrument; keep after the kit links (layout.css resets --ly-scale) -->
+    <style>
+      :root {
+        --p-bg: #18191b; --p-surface: #222427; --p-ink: #eff0f1; --p-muted: #9c9ea3;
+        --p-accent: #ff4a1f; --p-accent-ink: #18191b; --p-action: #ff4a1f; --p-action-ink: #18191b;
+        --p-inv-bg: #eff0f1; --p-inv-surface: #dedfe0; --p-inv-ink: #18191b; --p-inv-muted: #5b5c5e;
+        --p-inv-accent: #18191b; --p-inv-accent-ink: #eff0f1; --p-inv-action: #18191b; --p-inv-action-ink: #eff0f1;
+        --font-display: "Instrument Sans", system-ui, sans-serif;
+        --font-text: "Instrument Sans", system-ui, sans-serif;
+        --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+        --display-weight: 500;
+        --display-tracking: -0.028em;
+        --display-tracking-xl: -0.036em;
+        --display-stretch: 96%;
+        --ly-scale: 1.04;
+      }
+    </style>
+    <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+    <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+    <script src="/kit/backgrounds/backgrounds.js"></script>
+    <link rel="modulepreload" href="/kit/moments/moments.js" />
+    <link rel="modulepreload" href="/kit/moments/lib.js" />
+    <link rel="modulepreload" href="/kit/moments/letters-assemble/moment.js" />
   </head>
   <body>
+    <!-- type: software (portfólio de dev front-end: o trabalho mostrado são apps web)
+         deal: hero centred, nav nav-centre (nav-cards redealt: its cards would repeat the project screens), close close-word,
+         footer footer-columns, rhythm space, buttons arrow, mark dots, ground sky (the hero window only)
+         moments: letters-assemble (#metodo); iris-opens dropped (it faded the experience rows under the checker) -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

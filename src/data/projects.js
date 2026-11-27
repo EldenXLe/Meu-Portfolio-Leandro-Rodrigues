@@ -1,50 +1,64 @@
-import loja from "../assets/images/projects/lojaMateriais.png";
-import pokedex from "../assets/images/projects/pokedex.png";
-import clima from "../assets/images/projects/ConsultaClima.png";
-import restaurante from "../assets/images/projects/Restaurante.png";
 import financeFlow from "../assets/images/projects/financeflow.png";
+import loja from "../assets/images/projects/lojaMateriais.png";
+import restaurante from "../assets/images/projects/Restaurante.png";
+import clima from "../assets/images/projects/ConsultaClima.png";
+import pokedex from "../assets/images/projects/pokedex.png";
 
 const projects = [
   {
-    id: 1,
-    title: "Gerenciamento Financeiro - FinanceFlow",
+    id: "financeflow",
+    title: "FinanceFlow",
+    kind: "Controle financeiro",
     description:
-      "Aplicação web completa de gerenciamento financeiro pessoal para gerenciar as despesas e receitas.",
-    techs: ["React", "Vite", "JavaScript", "Tailwind CSS", "React Router DOM", "Context API", "Recharts", "Axios", "UUID"],
+      "Controle de despesas e receitas com dashboard, gráficos por categoria e importação de extratos OFX.",
+    techs: ["React", "Vite", "Tailwind CSS", "React Router", "Context API", "Recharts"],
     image: financeFlow,
     demo: "https://gerenciamento-financeiro-six.vercel.app/",
     github: "https://github.com/EldenXLe/Gerenciamento-Financeiro",
   },
-
   {
-    id: 2,
-    title: "Landing Page - Loja de Materiais",
+    id: "materiais",
+    title: "Loja de Materiais",
+    kind: "Landing page",
     description:
-      "Landing page moderna desenvolvida para uma loja de materiais, com foco em apresentação de produtos, organização visual e experiência do usuário.",
-    techs: ["React", "Vite", "JavaScript", "Tailwind CSS"],
+      "Landing page para loja de materiais de construção, com vitrine de produtos e pedido de orçamento pelo WhatsApp.",
+    techs: ["React", "Vite", "Tailwind CSS"],
     image: loja,
     demo: "https://landing-materials.vercel.app",
     github: "https://github.com/EldenXLe/LandingMaterials",
   },
   {
-    id: 3,
-    title: "Pokédex",
+    id: "restaurante",
+    title: "Restaurante",
+    kind: "Landing page",
     description:
-      "Aplicação que consome a PokéAPI para listar e exibir informações de Pokémon, demonstrando integração com API e manipulação dinâmica de dados.",
+      "Modelo de site para restaurantes com cardápio, pedidos pelo WhatsApp e mapa de localização.",
+    techs: ["React", "Vite", "Tailwind CSS"],
+    image: restaurante,
+    demo: "https://modelo-restaurantes.vercel.app",
+    github: "https://github.com/EldenXLe/LandingRestaurant",
+  },
+  {
+    id: "clima",
+    title: "Consulta Clima",
+    kind: "API OpenWeather",
+    description:
+      "Clima da localização atual e busca por cidade, consumindo a API da OpenWeather.",
+    techs: ["React", "JavaScript", "API REST"],
+    image: clima,
+    demo: "https://consulta-clima-ten.vercel.app",
+    github: "https://github.com/EldenXLe/Consulta-Clima",
+  },
+  {
+    id: "pokedex",
+    title: "Pokédex",
+    kind: "PokéAPI",
+    description:
+      "Lista paginada de Pokémon com detalhes e cadeia de evolução, em JavaScript puro consumindo a PokéAPI.",
     techs: ["JavaScript", "CSS", "API REST"],
     image: pokedex,
     demo: "https://pokedex-rho-khaki-63.vercel.app",
     github: "https://github.com/EldenXLe/Pokedex",
-  },
-  {
-    id: 4,
-    title: "Landing Page - Restaurante",
-    description:
-      "Landing page desenvolvida para um restaurante, com destaque para cardápio, localização e informações de contato em uma interface moderna e fluida.",
-    techs: ["React", "Vite", "JavaScript", "Tailwind CSS"],
-    image: restaurante,
-    demo: "https://modelo-restaurantes.vercel.app",
-    github: "https://github.com/EldenXLe/LandingRestaurant",
   },
 ];
 

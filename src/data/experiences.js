@@ -1,22 +1,21 @@
 const experiences = [
   {
     id: 1,
-    role: "Analista de Suporte Técnico | Sistemas ERP",
+    role: "Analista de suporte técnico, sistemas ERP",
     company: "Oficina Inteligente",
-  description:
-      `> Análise e resolução de problemas relacionados ao funcionamento do sistema utilizado por oficinas mecânicas.
-       > Configuração e parametrização do sistema conforme necessidades dos clientes.
-       > Investigação e solução de erros relacionados à emissão de notas fiscais e integração com sistemas municipais.
-       > Utilização de ferramentas de acesso remoto para diagnóstico e resolução de problemas técnicos.
-  `},
+    tasks: [
+      "Resolvia problemas no sistema usado por oficinas mecânicas e configurava cada cliente.",
+      "Investigava erros na emissão de notas fiscais e na integração com prefeituras.",
+    ],
+  },
   {
     id: 2,
-    role: "Analista de Suporte de TI",
+    role: "Analista de suporte de TI",
     company: "Concentrix",
-    description:
-      `> Diagnóstico e resolução de problemas técnicos em computadores, dispositivos móveis e serviços digitais.
-       > Registro e acompanhamento de chamados técnicos.
-  `},
+    tasks: [
+      "Diagnosticava falhas em computadores, celulares e serviços digitais, com registro de cada chamado.",
+    ],
+  },
 ];
 
 export default experiences;
